@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: rgb(51, 50, 50);
+        }
+        nav{
+            background-color: azure;
+            height: 80px;
+        }
+        ul{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+        }
+        li{
+            display: inline;
+        }
+        a{
+            text-decoration: none;
+            color: blueviolet;
+            padding: 5px 10px;
+            position: relative;
+        }
+        a::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: blue;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        a:hover::after{
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="heading1">Variation 1 : Horizontal with underline effect</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button class="log-in" style="padding: 5px 10px;">login</button></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
