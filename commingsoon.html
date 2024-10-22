@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here we go again</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+        body,html{
+            font-family: "Noto Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container{
+            display: flex;
+            background: linear-gradient(135deg, #8a2be2, #4169e1);
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .logo{
+            width: 200px;
+            object-fit: contain;
+        }
+        .content{
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        h1{
+            color: #252424;
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+            color: #666;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="email"]{
+            padding: 0.5rem;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+        button{
+            padding: 0.5rem;
+            background-color: #8a2be2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s ease-in-out;
+        }
+        button:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="1.png" class="logo" alt="cup_logo">
+            <h1>Coming soon</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui suscipit corrupti dolorem, consequuntur quis at ad vitae temporibus sequi accusantium!</p>
+            <form id="notifyme_form">
+                <input type="email" placeholder="enter your email" required>
+                <button type="submit">Notify me</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
