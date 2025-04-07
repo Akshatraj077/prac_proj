@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-900 flex justify-center items-center min-h-screen">
+    <div id="container" class="bg-gray-800 rounded-lg p-8">
+        <h2 class="text-center text-white mb-5 text-2xl font-bold">SHOPPING</h2>
+        <div id="input-container" class="pb-2 mb-3">
+           <input type="text" id="name-input" placeholder="Enter the product.." class="bg-gray-700 px-1 py-3 rounded-md text-white focus:outline-none focus:ring-blue-700 focus:ring-2">
+           <input type="text" id="price-input" placeholder="Enter the price.." class="bg-gray-700 px-1 py-3 rounded-md text-white focus:outline-none focus:ring-blue-700 focus:ring-2">
+           <button id="input-btn" class="bg-purple-700 px-1 py-3 text-white rounded-md hover:bg-purple-800">Add to cart</button>
+        </div>
+        <p id="ermsg" class="text-red-700 font-bold text-center mb-1 hidden">Please enter product name/price correctly!</p>
+        <h2 class="text-white mb-3 text-xl font-bold">CART</h2>
+        <ul id="cart" class="mb-2 hidden">
+            <ul id="cart1" class="mb-2 hidden">
+
+            </ul>
+            <div id="chk-space" class="flex justify-between items-center">
+                <p id="tot-price-msg" class="bg-gray-700 px-4 py-3 rounded-md text-white font-semibold"></p>
+                <button id="chk-btn" class="bg-purple-700 px-1 py-3 text-white rounded-md hover:bg-purple-800">Checkout</button>
+            </div>
+        </ul>
+        <p id="mty-cart-msg" class="text-red-700 font-bold text-center hidden">Your Cart is empty!</p>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

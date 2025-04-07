@@ -1,0 +1,8 @@
+# Ignore Python and Node junk
+__pycache__/
+*.pyc
+.env
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
